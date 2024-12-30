@@ -86,7 +86,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd cicd
+            cd kotlin_cicd
             # Переход в директорию проекта.
             mvn clean install
             # Повторная сборка проекта с помощью Maven.
@@ -94,3 +94,4 @@ jobs:
             # Остановка текущих Docker-контейнеров.
             docker compose up -d --build
             # Сборка и запуск обновлённых контейнеров с помощью docker compose.
+   

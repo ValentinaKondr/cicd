@@ -16,6 +16,6 @@ class ConverterTests {
 
     @Test
     fun test_multiply() {
-        assertEquals(3, calculator.multiply(3, 2))
+        assertEquals(6, calculator.multiply(3, 2))
     }
 }

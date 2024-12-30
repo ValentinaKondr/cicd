@@ -86,7 +86,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd calucalator
+            cd cicd
             # Переход в директорию проекта.
             mvn clean install
             # Повторная сборка проекта с помощью Maven.
